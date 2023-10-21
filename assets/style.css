@@ -3,15 +3,17 @@ html, body{
   }
   
   nav{
-    display:flex;
-    margin: 0 auto;
     list-style-type:none;
     font-family:Arial;
-    font-size: 40px;
-    display: flex;
+    font-size: 2rem;
     padding:1em 3em;
     background:#662549;
-    justify-content:safe center;
+  }
+
+  .brackets{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
   }
   
   nav a{
@@ -26,53 +28,105 @@ html, body{
     color:#f39f5a;
   }
   
-  div.brackets a:before,
-  div.brackets a:after{
-     position: absolute;
-     opacity: 0;
-      font-size: 35px;
-      transition: all 0.3s;
-  }
-  
-  div.brackets a:before{
-    content: '(';
-    left: 60px;
-    transform: translateX(10px);
-  }
-  div.brackets a:after {
-      content: ')';
-      right:60px;
-      transform:translateX(10px);
-     }
-  
-  div.brackets a:hover:before,
-  div.brackets a:hover:after {
-      opacity: 1;
-      transform: translateX(0px);
-  }
-  
+
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h1 {background: red;}
+    nav{
+        font-size: calc(16px + 0.390625vw);
+    }
+    div.brackets a:after{
+       content:none;
+    }
+    div.brackets a:before{
+       content:none;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     h1{background: green;}
+    nav{
+        font-size: calc(18px + 0.390625vw);
+    }
+
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
     h1{background: blue;}
+    nav{
+        font-size: calc(19px + 0.390625vw);
+    }
+    div.brackets a:after{
+       content:none;
+    }
+    div.brackets a:before{
+       content:none;
+    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     h1 {background: orange;}
+    nav{
+        font-size: calc(20px + 0.390625vw);
+    }
+    div.brackets a:before,
+    div.brackets a:after{
+       position: absolute;
+       opacity: 0;
+        font-size: 35px;
+        transition: all 0.3s;
+    }
+    
+    div.brackets a:before{
+      content: '(';
+      left: 3rem;
+      transform: translateX(10px);
+    }
+    div.brackets a:after {
+        content: ')';
+        right:3rem;
+        transform:translateX(10px);
+       }
+    
+    div.brackets a:hover:before,
+    div.brackets a:hover:after {
+        opacity: 1;
+        transform: translateX(0px);
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     h1 {background: pink;}
+    nav{
+        font-size: calc(21px + 0.390625vw);
+    }
+    div.brackets a:before,
+    div.brackets a:after{
+       position: absolute;
+       opacity: 0;
+        font-size: 35px;
+        transition: all 0.3s;
+    }
+    
+    div.brackets a:before{
+      content: '(';
+      left: 3rem;
+      transform: translateX(10px);
+    }
+    div.brackets a:after {
+        content: ')';
+        right:3rem;
+        transform:translateX(10px);
+       }
+    
+    div.brackets a:hover:before,
+    div.brackets a:hover:after {
+        opacity: 1;
+        transform: translateX(0px);
+    }
   }
