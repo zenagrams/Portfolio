@@ -24,24 +24,53 @@ html, body{
     position:relative;
   }
   
-  div.brackets a:hover{
+  .brackets a:hover{
     color:#f39f5a;
+  }
+  .brackets a:before,
+  .brackets a:after{
+    position: absolute;
+    opacity: 0;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+    
+  .brackets a:before{
+    content: '(';
+    left: 2.5rem;
+    transform: translateX(0);
+  }
+  .brackets a:after {
+    content: ')';
+    right: 2.5rem;
+    transform:translateX(0);
+  }
+  .brackets a:hover:before,
+  .brackets a:hover:after {
+      opacity: 1;
+      transform: translateX(0);
   }
   
 
-
+  @media only screen and (max-width: 992px){
+    .brackets a:before,
+    .brackets a:after{
+      font-size: 1.2rem;
+    }
+      .brackets a:before{
+        left: 1.4em;
+      }
+      .brackets a:after {
+        right: 1.4em;
+      }
+  }
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h1 {background: red;}
     nav{
         font-size: calc(16px + 0.390625vw);
     }
-    div.brackets a:after{
-       content:none;
-    }
-    div.brackets a:before{
-       content:none;
-    }
+    
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -59,74 +88,23 @@ html, body{
     nav{
         font-size: calc(19px + 0.390625vw);
     }
-    div.brackets a:after{
-       content:none;
-    }
-    div.brackets a:before{
-       content:none;
-    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    h1 {background: orange;}
+    h1 {
+      background: orange;
+    }
     nav{
-        font-size: calc(20px + 0.390625vw);
+      font-size: calc(20px + 0.390625vw);
     }
-    div.brackets a:before,
-    div.brackets a:after{
-       position: absolute;
-       opacity: 0;
-        font-size: 35px;
-        transition: all 0.3s;
+
     }
-    
-    div.brackets a:before{
-      content: '(';
-      left: 3rem;
-      transform: translateX(10px);
-    }
-    div.brackets a:after {
-        content: ')';
-        right:3rem;
-        transform:translateX(10px);
-       }
-    
-    div.brackets a:hover:before,
-    div.brackets a:hover:after {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-  } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     h1 {background: pink;}
     nav{
         font-size: calc(21px + 0.390625vw);
-    }
-    div.brackets a:before,
-    div.brackets a:after{
-       position: absolute;
-       opacity: 0;
-        font-size: 35px;
-        transition: all 0.3s;
-    }
-    
-    div.brackets a:before{
-      content: '(';
-      left: 3rem;
-      transform: translateX(10px);
-    }
-    div.brackets a:after {
-        content: ')';
-        right:3rem;
-        transform:translateX(10px);
-       }
-    
-    div.brackets a:hover:before,
-    div.brackets a:hover:after {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+    } 
   }
