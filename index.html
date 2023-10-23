@@ -19,15 +19,21 @@
         <p>Web Designer + Front-end Developer </p>
     </div>
     </div>
-    <img src="https://source.unsplash.com/F_QttqcsqNo" alt="silhouette profile of a woman" width="200px">
-    <div id="about" class="about">
-       <h2>About Me</h2>
+    <div class="about">
+    <h2>About Me</h2>
+    <div class="about-section">
+    <div class="about-content">
+        <div class="about-image">
+                <img src="assets/images/picofme.png" alt="profile picture of Zenaida, web developer">
+        </div>
         <p>Hey there, I'm Zenaida Adame, a front-end web developer with a passion for growth and collaboration. My expertise lies in HTML, CSS, and Javascript, and I use these skills to create visually appealing and user-friendly websites.  </p>
         <p>When I'm not behind the screen, you'll find me roller-skating, dancing salsa, or simply enjoying the serenity of a beautiful sunset. These activities keep me grounded and fuel my creativity.</p>
         <p>Feel free to take a peek at my portfolio to see my work in action. Thanks for dropping by, and I can't wait to chat with you! </p>
     </div>
-    <div id="container">
-    <h2>My Work</h2>
+        </div>
+    </div>
+    <div od>
+        <h2>Projects</h2>
     <div id="gallery">
         <div class="gallery-box">
             <img class="gallery-image" src="assets/images/wip.jpg" alt="empty box for first project"
@@ -56,10 +62,28 @@
     </div>
 </div>
 
-    <div id="contact" class="contact">
-        <h2>Contact Me</h2>
+
+    <div class="contact">
+        <div class="contact-heading">
+          <h2>Contact Me</h2>
+        </div>
+          <div id="contact-pic" class="contact-form">
+            <img src="/assets/images/charlesdeluvio-Lks7vei-eAg-unsplash.jpg " style="width:20rem">
+          <div id="form" class="contact-form">
+            <form action="#">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="First and Last Name">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Message Topic">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="send" value="Send">
+            </form>
+          </div>
+        </div>
         <a href="https://github.com/zenagrams"><img src="http://127.0.0.1:5500/assets/images/github.svg"></a>
         <a href="https://www.linkedin.com/in/zenaida-adame"><img src="http://127.0.0.1:5500/assets/images/linkedin.svg"></a>
-    </div>
+      </div>
+      </div>
 </body>
 </html>

@@ -2,7 +2,6 @@ html, body{
     margin:0px;
     min-height: 100vh;
   }
-  
   nav{
     list-style-type:none;
     font-family:"Montserrat", Arial, sans-serif;
@@ -74,14 +73,30 @@ h2{
   transform: translate(-50%, -50%);
   color: white;
 }
+.about{
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+}
 
+.about-content {
+padding-left: 15em;
+padding-right:15em;
+}
 
+.about-image img {
+  width: 10em;
+  float:left;
+  margin: 0px 15px 15px 0px;
+}
+#projects{
+  background-color:#662549;
+  padding: 10px 10px;
+}
 #gallery{
-  background: #662549;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: -1rem -1rem;/*compensate for excess margin on outer gallery flex items*/
+  margin: 2rem 1rem;
 }
 .gallery-box{
   background: red;
@@ -99,6 +114,63 @@ h2{
 .gallery-image:hover {
 	opacity:0.8;
 }
+
+.contact {
+  background-color: #f2f2f2;
+  padding: 10px;
+  position:absolute;
+}
+.contact-heading{
+  text-align: center;
+}
+
+.contact-form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap:20px;
+}
+
+
+#contact-pic{
+  position: relative;
+  left:10rem;
+}
+
+a{
+  position: relative;
+  left:10rem;
+  bottom:13rem;
+}
+form{
+  position: relative;
+  right:13em;
+  margin:0.5em;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=send] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=send]:hover {
+  background-color: #45a049;
+}
+
+
   
 
   @media only screen and (max-width: 992px){
@@ -119,7 +191,26 @@ h2{
     nav{
         font-size: calc(16px + 0.390625vw);
     }
-    
+    .about-content {
+      padding-left: 1em;
+      padding-right:1em;
+      }
+      #contact-pic{
+        left:10vw;
+      }
+      a{
+        left:10vw; 
+        bottom:13rem;
+      }
+      form{
+        right:0.5vw;
+      }
+      @media screen and (max-width: 600px) {
+        .column, input[type=send] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -128,6 +219,17 @@ h2{
     nav{
         font-size: calc(18px + 0.390625vw);
     }
+    .about-content {
+      padding-left: 2em;
+      padding-right:2em;
+      }
+a{
+  left:1em; 
+  bottom:13rem
+}
+form{
+  left: 1em;
+}
 
   }
   
@@ -137,8 +239,8 @@ h2{
     nav{
         font-size: calc(19px + 0.390625vw);
     }
-  } 
-  
+    
+
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     h1 {
@@ -157,3 +259,4 @@ h2{
         font-size: calc(21px + 0.390625vw);
     } 
   }
+}
