@@ -116,9 +116,9 @@ line-height:1.5;
   width: 100%;
   height: auto;
 }
-.project-card:hover{
+/* .project-card:hover{
  opacity:0.8;
-}
+} */
 .project-card .see-details-btn {
   display: block;
   background-color: #333;
@@ -136,7 +136,7 @@ line-height:1.5;
   width: 60%;
   z-index: 1;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: orange;
 }
 .modal h3 {
   margin: 10px 0;
@@ -151,7 +151,7 @@ line-height:1.5;
 }
 
 .modal-content {
-  background-color: #36454F;
+  background-color: white;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
