@@ -8,82 +8,127 @@
 </head>
 <body>
     <div class="hero">
-    <nav class="brackets">
-        <a href="./index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="hero-text">
         <h1>Zenaida Adame</h1>
-        <p>Web Designer + Front-end Developer </p>
+        <p>Web Designer + Front-end Developer</p>
+        <a href="resume.pdf" download class="download-btn">Download Resume</a>
     </div>
+    <nav class="navbar">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#contact" class="nav-item">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <div>
+    <div class="about-container">
+        <img src="assets/images/picofme.png" alt="About Me Image" class="about-image">
+            <p>Hey there, I'm Zenaida Adame. My expertise lies in HTML, CSS, and Javascript, and I use these skills to create visually appealing and user-friendly websites. <br> When I'm not behind the screen, you'll find me roller-skating, dancing salsa, or simply enjoying a beautiful sunset. These activities keep me grounded and fuel my creativity. <br>Feel free to take a peek at my portfolio.Thanks for dropping by, and I can't wait to chat with you!  </p>
+            
     </div>
-    <div class="about">
-    <h2>About Me</h2>
-    <div class="about-section">
-    <div class="about-content">
-        <div class="about-image">
-                <img src="assets/images/picofme.png" alt="profile picture of Zenaida, web developer">
         </div>
-        <p>Hey there, I'm Zenaida Adame, a front-end web developer with a passion for growth and collaboration. My expertise lies in HTML, CSS, and Javascript, and I use these skills to create visually appealing and user-friendly websites.  </p>
-        <p>When I'm not behind the screen, you'll find me roller-skating, dancing salsa, or simply enjoying the serenity of a beautiful sunset. These activities keep me grounded and fuel my creativity.</p>
-        <p>Feel free to take a peek at my portfolio to see my work in action. Thanks for dropping by, and I can't wait to chat with you! </p>
-    </div>
-        </div>
-    </div>
-    <div od>
+    </section>
+    <section id="projects">
         <h2>Projects</h2>
-    <div id="gallery">
-        <div class="gallery-box">
-            <img class="gallery-image" src="assets/images/wip.jpg" alt="empty box for first project"
-            width="200" height="200">
-            <h3>Project 1</h3>
-            <button>View Details</button>
+        <!-- Insert your project cards here -->
+        <div id="project-container">
+        <div class="project-card">
+            <img src="assets/images/wip.jpg" alt="Project Image">
+            <h3>Project 1 Title</h3>
+            <p>Short description of the project.</p>
+            <button class="see-details-btn" onclick="openModal('modal1')" >See Details</button>
+            <div class="modal" id="modal1">
+                <h3 class="modal-title">Project Title</h3>
+                <img src="assets/images/wip.jpg" alt="Project Image 1">
+                <img src="assets/images/wip.jpg" alt="Project Image 2">
+                <img src="assets/images/wip.jpg" alt="Project Image 3">
+                <img src="assets/images/wip.jpg" alt="Project Image 4">
+                <p>Longer description of the project.</p>
+            <button class="close-button">&times;</button>
+            </div>
         </div>
-        <div class="gallery-box">
-            <img class="gallery-image"src="assets/images/wip.jpg" alt="empty box for second project"
-            width="200" height="200">
-            <h3>Project 2</h3>
-            <button>View Details</button>
+    <div class="project-card">
+            <img src="assets/images/wip.jpg" alt="Project Image">
+            <h3>Project 2 Title</h3>
+            <p>Short description of the project.</p>
+            <button class="see-details-btn" onclick="openModal('modal2')">See Details</button>
+            <div class="modal" id="modal2">
+                <h3 class="modal-title">Project Title</h3>
+                <img src="assets/images/wip.jpg" alt="Project Image 1">
+                <img src="assets/images/wip.jpg" alt="Project Image 2">
+                <img src="assets/images/wip.jpg" alt="Project Image 3">
+                <img src="assets/images/wip.jpg" alt="Project Image 4">
+                <p>Longer description of the project.</p>
+            <button class="close-button">&times;</button>
+            </div>
         </div>
-        <div class="gallery-box">
-            <img class="gallery-image" src="assets/images/wip.jpg" alt="empty box for third project"
-            width="200" height="200">
-            <h3>Project 3</h3>
-            <button>View Details</button>
+    <div class="project-card">
+            <img src="assets/images/wip.jpg" alt="Project Image">
+            <h3>Project 3 Title</h3>
+            <p>Short description of the project.</p>
+            <button class="see-details-btn" onclick="openModal('modal3')">See Details</button>
+            <div class="modal" id="modal3">
+                <h3 class="modal-title">Project Title</h3>
+                <img src="assets/images/wip.jpg" alt="Project Image 1">
+                <img src="assets/images/wip.jpg" alt="Project Image 2">
+                <img src="assets/images/wip.jpg" alt="Project Image 3">
+                <img src="assets/images/wip.jpg" alt="Project Image 4">
+                <p>Longer description of the project.</p>
+            <button class="close-button">&times;</button>
+            </div>
         </div>
-        <div class="gallery-box">
-            <img class="gallery-image" src="assets/images/wip.jpg" alt="empty box for fourth project"
-            width="200" height="200">
-            <h3>Project 4</h3>
-            <button>View Details</button>
+    <div class="project-card">
+            <img src="assets/images/wip.jpg" alt="Project Image">
+            <h3>Project 4 Title</h3>
+            <p>Short description of the project.</p>
+            <button class="see-details-btn" onclick="openModal('modal4')">See Details</button>
+            <div class="modal" id="modal4">
+                <h3 class="modal-title">Project Title</h3>
+                <img src="assets/images/wip.jpg" alt="Project Image 1">
+                <img src="assets/images/wip.jpg" alt="Project Image 2">
+                <img src="assets/images/wip.jpg" alt="Project Image 3">
+                <img src="assets/images/wip.jpg" alt="Project Image 4">
+                <p>Longer description of the project.</p>
+                <button class="close-button">&times;</button>
+            </div>
         </div>
     </div>
-</div>
-
-
-    <div class="contact">
-        <div class="contact-heading">
-          <h2>Contact Me</h2>
+    </section>
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form-favicons">
+        <div class="contact-info">
+            <img class="contact-img" src="/assets/images/charlesdeluvio-Lks7vei-eAg-unsplash.jpg " alt="Image of person making a phone call" width="350px" height="auto">
+            <div class="favicons contact-favicons">
+                <h3>Follow me!</h3>
+                <a href="https://github.com/zenagrams"><img class="favicon" src="http://127.0.0.1:5500/assets/images/github.svg" alt="GitHub"></a>
+                <a href="https://twitter.com/adame_zenaida"><img class="favicon" src="assets/images/twitter.svg" alt="Twitter"></a>
+                <a href="https://codepen.io/zenagrams"><img class="favicon" src="assets/images/codepen.svg" alt="CodePen"></a>
+                <a href="https://linkedin.com/in/zenaida-adame"><img class="favicon" src="http://127.0.0.1:5500/assets/images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
         </div>
-          <div id="contact-pic" class="contact-form">
-            <img src="/assets/images/charlesdeluvio-Lks7vei-eAg-unsplash.jpg " style="width:20rem">
-          <div id="form" class="contact-form">
-            <form action="#">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="First and Last Name">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Message Topic">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="send" value="Send">
-            </form>
-          </div>
+    <div class="contact-container">
+        <form action="#" name="contact_form">
+            <!-- Insert your form fields here -->
+        <label for="first_name">First Name</label>
+            <input name="first_name" type="text" required placeholder="John"/>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input name="last_name" type="text" required placeholder="Doe"/>
+            <br>
+            <label for="email">Email</label>
+            <input name="email" type="email" required placeholder="you@domain.com"/>
+            <br>
+            <label for="message">Message</label><br>
+            <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required maxlength="500"></textarea>
+            <div class="center">
+                <input type="submit" value="Submit">
+            </div>
         </div>
-        <a href="https://github.com/zenagrams"><img src="http://127.0.0.1:5500/assets/images/github.svg"></a>
-        <a href="https://www.linkedin.com/in/zenaida-adame"><img src="http://127.0.0.1:5500/assets/images/linkedin.svg"></a>
-      </div>
-      </div>
-</body>
-</html>
+        </form>  
+    </div>
+    </section>
+    </body>
+    <footer>
+        <p>Thanks for stopping by! © 2023 Zenaida Adame. All rights reserved.</p>
+    </footer>
