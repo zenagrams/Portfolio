@@ -15,7 +15,7 @@ P{
 }
 
 .hero {
-  background: url('http://127.0.0.1:5500/assets/images/background.jpg') no-repeat center center;
+  background: url('/assets/images/background.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -136,6 +136,8 @@ margin: 20px;
   justify-content: center;
 }
 .project-card {
+  display: flex;
+  flex-wrap:wrap;
   width: 200px;
   border: 1px solid #333;
   border-radius: 10px;
@@ -150,11 +152,8 @@ color:#333;
 .project-card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
 }
-/* .project-card:hover{
- opacity:0.8;
-} */
+
 .project-card .see-details-btn {
   display: block;
   background-color: #333;
@@ -173,16 +172,18 @@ color:#333;
 .modal {
   display:none;
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 70%;
   z-index: 1;
   overflow: auto;
   background-color: white;
   padding: 4rem 4rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0,0,0,0.4);
   border-radius: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .modal img {
